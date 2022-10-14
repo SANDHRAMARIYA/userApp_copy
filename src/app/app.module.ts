@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SigninComponent } from './signin/signin.component';
 import { SignupComponent } from './signup/signup.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 const appRoutes:Routes=[
   {
@@ -13,6 +14,9 @@ const appRoutes:Routes=[
   },
   {
     path:"signup",component:SignupComponent
+  },
+  {
+    path:"dashboard",component:DashboardComponent
   }
   
 ]
@@ -22,7 +26,8 @@ const appRoutes:Routes=[
   declarations: [
     AppComponent,
     SigninComponent,
-    SignupComponent
+    SignupComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
